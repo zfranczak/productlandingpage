@@ -1,69 +1,116 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #133331;
+
   color: #dfe4e4;
 }
 
-html,
-body {
-  min-width: 290px;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
 
-  background-color: #ffffff;
+body {
+  background-color: #133331;
   font-family: "Open Sans", Arial, sans-serif;
   line-height: 1.5;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 > a {
+  color: black;
+  text-decoration: none;
+}
+
+h2 p {
+  margin: 20px auto 20px auto;
+  max-width: 1400px;
+}
+
+p {
+  margin: 20px auto 20px auto;
+  max-width: 1400px;
 }
 
 #page-wrapper {
   position: relative;
 }
 
-#nav-head {
+#header {
   display: flex;
+  position: fixed;
+  background-color: #bccccc;
+  color: black;
   padding-bottom: 5px;
-  padding-right: 20px;
   align-items: center;
   text-align: center;
-}
-
-#navbar {
-  position: relative;
-  min-width: 290px;
-  top: 0px;
-  left: 0px;
+  z-index: 9;
   width: 100%;
-  height: 100%;
 }
 
-#navbar ul {
-  height: 88%;
+.heading {
+  padding-top: 100px;
+}
+
+#nav-bar {
+  min-width: 290px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 auto;
+}
+
+#nav-bar ul {
   padding: 0;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
-#navbar li {
+#nav-bar li {
   list-style: none;
   position: relative;
   width: 100%;
   display: inline;
 }
 
-#navbar a {
+#nav-bar a {
   padding: 10px 30px;
   text-decoration: none;
-  cursor: pointer;
+  color: black;
 }
 
 #header-img {
   width: 100%;
   object-fit: cover;
+  max-width: 50px;
+  padding: 20px 10px 20px 10px;
+}
+
+.main-section {
+  width: 100%;
+  margin: 0 auto;
+}
+.page-wrapper {
+  margin: 0 auto;
+  width: 100%;
 }
 
 #main-doc {
   position: relative;
   padding: 20px;
-  margin-bottom: 110px;
+}
+
+#amenities {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px auto;
 }
 
 .gallery {
@@ -95,8 +142,10 @@ body {
   border-radius: 4em;
   height: 50px;
   width: 50px;
+  margin: 10px 10px 1px 10px;
   object-fit: cover;
   overflow: hidden;
+  float: left;
 }
 
 #reviews > iframe {
@@ -113,7 +162,59 @@ body {
   gap: 16px;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 20px 10px;
+}
+
+.review {
+  background-color: #bccccc;
+  border-radius: 1em;
+  margin: 25px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#amenities > div {
+  background-color: black;
+  border-radius: 0.5em;
+  min-width: 350px;
+}
+
+#am-li {
+  background-color: #bccccc;
+  color: black;
+}
+
+#amenity_details li {
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+h3 h4 h5 {
+  padding-bottom: 10px;
+}
+
+.review > p {
+  margin: 10px;
+  color: black;
+  text-align: left;
+}
+
+.review > h4 {
+  margin: 10px 0px 1px 0px;
+  color: black;
+  text-align: left;
+}
+
+.review > h5 {
+  margin: 0px;
+  color: black;
+  text-align: left;
+}
+
+.review > p {
+  margin: 0px 10px 0px 10px;
+  color: black;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 650px) {
@@ -129,4 +230,9 @@ body {
   nav li {
     padding-bottom: 5px;
   }
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
 }

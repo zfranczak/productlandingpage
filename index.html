@@ -9,9 +9,21 @@
 
   <body>
     <div id="page-wrapper">
-      <header id="nav-head">
-        The D & R Retreat
-        <nav id="navbar">
+      <header id="header">
+        <a href="#head">
+          <img
+            id="header-img"
+            src="https://cdn.pixabay.com/photo/2015/11/26/16/28/vintage-1064142_960_720.png"
+            alt="drlogo"
+            loading="lazy"
+          />
+        </a>
+
+        <h1>
+          <a href="#head">The D & R Retreat</a>
+        </h1>
+
+        <nav id="nav-bar">
           <ul>
             <li>
               <a class="nav-link" href="#gallery">Gallery</a>
@@ -30,7 +42,7 @@
             </li>
 
             <li>
-              <a class="nav-link" href="#book_with_airbnb">Book with Airbnb</a>
+              <a class="nav-link" href="#video">Book with Airbnb</a>
             </li>
           </ul>
         </nav>
@@ -38,14 +50,8 @@
 
       <main id="main-doc">
         <section class="heading">
-          <div id="header">
-            <img
-              id="header-img"
-              src="https://a0.muscache.com/im/pictures/miso/Hosting-53494566/original/3e2d3020-8941-4545-a814-d11290fd2f6b.jpeg?im_w=1200"
-              alt="drlogo"
-              loading="lazy"
-            />
-            <h1 id="head-title">The D & R Retreat</h1>
+          <div id="head">
+            <h2 id="head-title">The D & R Retreat</h2>
             <p id="head-subtitle">
               Stylish and bright, our newly renovated home is the perfect London
               base, ideally located near Wembley Stadium and with great
@@ -57,9 +63,8 @@
         </section>
 
         <section class="main-section" id="gallery">
-          <header>
-            <h1>Gallery</h1>
-          </header>
+          <h3>Gallery</h3>
+
           <div class="gallery">
             <img
               src="https://a0.muscache.com/im/pictures/miso/Hosting-53494566/original/3e2d3020-8941-4545-a814-d11290fd2f6b.jpeg?im_w=960"
@@ -170,7 +175,7 @@
         </section>
 
         <section class="main-section" id="about_this_space">
-          <div><h2>About This Space</h2></div>
+          <div><h3>About This Space</h3></div>
           <div>
             <p>
               This is our home, and we'd love to have you here while we travel.
@@ -192,60 +197,74 @@
         </section>
 
         <section class="main-section" id="amenity_details">
-          <div><h2>Amenity Details</h2></div>
-          <div>
-            <ul>
-              <h3>BATHROOM:</h3>
-              <li>Bath kit (shampoo, conditioner, shower gel)</li>
-              <li>Hairdryer</li>
-              <li>Toilet paper</li>
-              <li>Towels</li>
-              <li>Heating towel rack</li>
-
-              <h3>KITCHEN</h3>
-              <li>Array spices for cooking</li>
-              <li>Variety of pots, pans and utensils</li>
-              <li>Cocktail mixing tools</li>
-              <li>Craft coffee brewing setup</li>
-              <li>Modern dishwasher</li>
-              <li>Washing up liquid</li>
-              <li>Coffee</li>
-              <li>Tea</li>
-
-              <h3>TV Streaming Options</h3>
-              <li>Apple TV+</li>
-              <li>Netflix</li>
-              <li>NOW TV</li>
-              <li>Disney +</li>
-              <li>BBC iPlayer</li>
-
-              <h3>SMART HOME</h3>
-              <li>Multicolour Philips Hue ambiance lights</li>
-              <li>Siri voice control</li>
-              <li>Multi room HomePod audio</li>
-              <li>Control from your iPhone (iOS 15+)</li>
-              <li>Scene selection remotes</li>
-
-              <h3>LAUNDRY</h3>
-              <li>Modern washer</li>
-              <li>clothing detergent</li>
-              <li>Drying rack</li>
-              <li>Fabric Softener</li>
-            </ul>
+          <div><h3>Amenity Details</h3></div>
+          <div id="amenities">
+            <div>
+              <ul>
+                <h4 id="am-li">BATHROOM</h4>
+                <li>Bath kit (shampoo, conditioner, shower gel)</li>
+                <li>Hairdryer</li>
+                <li>Toilet paper</li>
+                <li>Towels</li>
+                <li>Heating towel rack</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <h4 id="am-li">KITCHEN</h4>
+                <li>Array spices for cooking</li>
+                <li>Variety of pots, pans and utensils</li>
+                <li>Cocktail mixing tools</li>
+                <li>Craft coffee brewing setup</li>
+                <li>Modern dishwasher</li>
+                <li>Washing up liquid</li>
+                <li>Coffee</li>
+                <li>Tea</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <h4 id="am-li">TV STREAMING OPTIONS</h4>
+                <li>Apple TV+</li>
+                <li>Netflix</li>
+                <li>NOW TV</li>
+                <li>Disney +</li>
+                <li>BBC iPlayer</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <h4 id="am-li">SMART HOME</h4>
+                <li>Multicolour Philips Hue ambiance lights</li>
+                <li>Siri voice control</li>
+                <li>Multi room HomePod audio</li>
+                <li>Control from your iPhone (iOS 15+)</li>
+                <li>Scene selection remotes</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <h4 id="am-li">LAUNDRY</h4>
+                <li>Modern washer</li>
+                <li>clothing detergent</li>
+                <li>Drying rack</li>
+                <li>Fabric Softener</li>
+              </ul>
+            </div>
           </div>
         </section>
 
         <section class="main-section" id="reviews">
-          <h2>Reviews</h2>
-          <div id="review_box">
-            <div>
+          <h3>Reviews</h3>
+          <div class="review_box">
+            <div class="review">
               <img
                 src="https://a0.muscache.com/im/users/6517243/profile_pic/1426246384/original.jpg?im_w=240"
                 alt="Simon"
                 class="icon"
               />
-              <h3>Simon</h3>
-              <h4>December 2022</h4>
+              <h4>Simon</h4>
+              <h5>December 2022</h5>
               <p>
                 Flat is in an excellent location. Nice warm and cozy and
                 equipped with everything you need. Communication with David and
@@ -254,28 +273,28 @@
               </p>
             </div>
 
-            <div>
+            <div class="review">
               <img
                 src="https://a0.muscache.com/im/pictures/user/087c2f92-9e43-420b-ad97-37af283d2543.jpg?im_w=240"
                 alt="Gabriele"
                 class="icon"
               />
-              <h3>Gabriele</h3>
-              <h4>December 2022</h4>
+              <h4>Gabriele</h4>
+              <h5>December 2022</h5>
               <p>
                 David and Rebekah were very responsive , the flat was nice and
                 modern with a useful kitchen . Really recommend
               </p>
             </div>
 
-            <div>
+            <div class="review">
               <img
                 src="https://a0.muscache.com/im/pictures/user/aa29c258-63a2-46d5-823a-477a671958be.jpg?im_w=240"
                 alt="Jamie"
                 class="icon"
               />
-              <h3>Jamie</h3>
-              <h4>December 2022</h4>
+              <h4>Jamie</h4>
+              <h5>December 2022</h5>
               <p>
                 This is the coziest flat for the absolute best deal you'll find
                 in London. The location is super convenient and walkable to
@@ -287,14 +306,14 @@
               </p>
             </div>
 
-            <div>
+            <div class="review">
               <img
                 src="https://a0.muscache.com/im/users/43131963/profile_pic/1441844660/original.jpg?im_w=240"
                 alt="Philip"
                 class="icon"
               />
-              <h3>Philip</h3>
-              <h4>December 2022</h4>
+              <h4>Philip</h4>
+              <h5>December 2022</h5>
               <p>
                 We had a great time in London staying at David & Rebekah’s
                 place. The flat is charming and exceptionally clean with great
@@ -309,16 +328,46 @@
               </p>
             </div>
           </div>
-          <h2>What is Airbnb?</h2>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/-kH8tXyNkIo"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          <div>
+            <h3>What is Airbnb?</h3>
+            <iframe
+              id="video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/-kH8tXyNkIo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+        <section>
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <fieldset>
+              <label id="name-label"
+                >Enter Your Name:
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+              </label>
+              <label id="email-label"
+                >Enter Your Email:
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+              </label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" />
+          </form>
         </section>
       </main>
     </div>
